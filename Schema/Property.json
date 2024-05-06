@@ -1,0 +1,14 @@
+{
+    "_id": "507f1f77bcf86cd799439011",
+    "name": "Camping en Laguna Fresca",
+    "value" : 12000,
+    "picture" : "",
+    "categories" : [
+      "507f1f77bcf86cd799439012",
+      "507f1f77bcf86cd79943230f1",
+      "507f1f77bcf86cd721321g21a"
+    ],
+    "amenities": "Spacious house with good ventilation and air aconditioning. Located a few meters from tha Lagoon Fresh ",
+    "calification": 4.5,
+    "UserPropertyId" : "507f1f77bcf86cd799as2"
+  }

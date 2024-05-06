@@ -1,0 +1,186 @@
+[
+    {
+      "_id": "507f1f77bcf86cd799439012",
+      "name": "Barranquilla, Alameda del Rio",
+      "value": 12000,
+      "picture": "https://alamedadelrio.co/wp-content/uploads/2023/08/AMATISTA-600X400.jpg",
+      "categories": [
+        "507f1f77bcf86cd799439012",
+        "507f1f77bcf86cd79943230f1",
+        "507f1f77bcf86cd721321g21a"
+      ],
+      "amenities": "Spacious house with good ventilation and air conditioning. Located a few meters from the Fresh Lagoon.",
+      "calification": 4.5,
+      "UserPropertyId": "507f1f77bcf86cd799as2"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439011",
+      "name": "Camping en Laguna Fresca",
+      "value": 13000,
+      "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-1107426605375495310/original/13c67ff1-fe60-43a8-bd0f-4972e2d9b25b.jpeg?im_w=720",
+      "categories": [
+        "507f1f77bcf86cd799439012",
+        "507f1f77bcf86cd79943230f1",
+        "507f1f77bcf86cd721321g21a"
+      ],
+      "amenities": "Comfortable camping site near the Fresh Lagoon. Includes bonfire area and guided tours.",
+      "calification": 4.2,
+      "UserPropertyId": "507f1f77bcf86cd799as2"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439045",
+      "name": "Puerto Colombia, Caribbean Castle",
+      "value": 15000,
+      "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-757295554084972655/original/a4432509-a889-4c13-9951-044102378e68.jpeg?im_w=720",
+      "categories": [
+        "507f1f77bcf86cd799439012",
+        "507f1f77bcf86cd79943230f1",
+        "507f1f77bcf86cd721321g21a"
+      ],
+      "amenities": "Luxurious castle-style accommodation overlooking the Caribbean Sea. Private beach access and gourmet dining.",
+      "calification": 4.8,
+      "UserPropertyId": "507f1f77bcf86cd799as2"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439013",
+      "name": "Casa del Sol, Salgar",
+      "value": 11000,
+      "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-919824294422895153/original/5b7085d2-5997-4c09-9f21-0c2f4e23ecb7.jpeg?im_w=720",
+      "categories": [
+        "507f1f77bcf86cd799439012",
+        "507f1f77bcf86cd79943230f1",
+        "507f1f77bcf86cd721321g21a"
+      ],
+      "amenities": "Cozy beachfront house with stunning sunset views. Ideal for families or couples.",
+      "calification": 4.6,
+      "UserPropertyId": "507f1f77bcf86cd799as2"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439019",
+      "name": "Apartotel El Descanso, Rodadero",
+      "value": 10000,
+      "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-42656873/original/e0c33c2a-a1a2-4c20-888c-cc32a409e1fa.jpeg?im_w=720",
+      "categories": [
+        "507f1f77bcf86cd799439012",
+        "507f1f77bcf86cd79943230f1",
+        "507f1f77bcf86cd721321g21a"
+      ],
+      "amenities": "Comfortable apartment hotel with pool and rooftop terrace. Walking distance to Rodadero Beach.",
+      "calification": 4.3,
+      "UserPropertyId": "507f1f77bcf86cd799as2"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439014",
+      "name": "Apartamento Vista Marina, Prado",
+      "value": 10500,
+      "picture": "https://a0.muscache.com/im/pictures/62758062-4296-4b64-8d2b-c513b22aa35e.jpg?im_w=720",
+      "categories": [
+        "507f1f77bcf86cd799439012",
+        "507f1f77bcf86cd79943230f1",
+        "507f1f77bcf86cd721321g21a"
+      ],
+      "amenities": "Modern apartment with panoramic views of the marina. Close to restaurants and entertainment.",
+      "calification": 4.4,
+      "UserPropertyId": "507f1f77bcf86cd799as2"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439015",
+      "name": "Villa del Mar, La Boquilla",
+      "value": 12500,
+      "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-615279204201976863/original/6c4b9500-6df8-418c-99b5-c695856f7aca.jpeg?im_w=720",
+      "categories": [
+        "507f1f77bcf86cd799439012",
+        "507f1f77bcf86cd79943230f1",
+        "507f1f77bcf86cd721321g21a"
+      ],
+      "amenities": "Spacious beach villa with private pool and BBQ area. Perfect for large groups or events.",
+      "calification": 4.7,
+      "UserPropertyId": "507f1f77bcf86cd799as2"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439016",
+      "name": "Habitación en Casa Colonial, Centro Histórico",
+      "value": 9500,
+      "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-653707108857198378/original/1c5675a3-5783-4944-84cb-04266608275c.jpeg?im_w=720",
+      "categories": [
+        "507f1f77bcf86cd799439012",
+        "507f1f77bcf86cd79943230f1",
+        "507f1f77bcf86cd721321g21a"
+      ],
+      "amenities": "Cozy room in a historic colonial house. Walking distance to major attractions.",
+      "calification": 4.3,
+      "UserPropertyId": "507f1f77bcf86cd799as2"
+    },
+    {
+        "_id": "507f1f77bcf86cd799439017",
+        "name": "Villa Paradise, Playa Blanca",
+        "value": 13500,
+        "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-623123308000482067/original/404d4f99-585f-4115-a98a-3e601932ef04.jpeg?im_w=720",
+        "categories": [
+          "507f1f77bcf86cd799439012",
+          "507f1f77bcf86cd79943230f1",
+          "507f1f77bcf86cd721321g21a"
+        ],
+        "amenities": "Luxurious beachfront villa with infinity pool and private chef. Spectacular ocean views.",
+        "calification": 4.9,
+        "UserPropertyId": "507f1f77bcf86cd799as2"
+      },
+      {
+        "_id": "507f1f77bcf86cd799439018",
+        "name": "Cabaña Encantada, Palomino",
+        "value": 11500,
+        "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-45409539/original/d1dcb723-f04c-4403-8b2c-48ece237f987.jpeg?im_w=720",
+        "categories": [
+          "507f1f77bcf86cd799439012",
+          "507f1f77bcf86cd79943230f1",
+          "507f1f77bcf86cd721321g21a"
+        ],
+        "amenities": "Charming wooden cabin nestled in the jungle. Close to pristine beaches and eco-tours.",
+        "calification": 4.6,
+        "UserPropertyId": "507f1f77bcf86cd799as2"
+      },
+
+      {
+        "_id": "507f1f77bcf86cd799439020",
+        "name": "Casa Azul, Taganga",
+        "value": 9500,
+        "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-623123308000482067/original/404d4f99-585f-4115-a98a-3e601932ef04.jpeg?im_w=720",
+        "categories": [
+          "507f1f77bcf86cd799439012",
+          "507f1f77bcf86cd79943230f1",
+          "507f1f77bcf86cd721321g21a"
+        ],
+        "amenities": "Quaint blue house with ocean views. Perfect for a relaxing getaway.",
+        "calification": 4.2,
+        "UserPropertyId": "507f1f77bcf86cd799as2"
+      },
+      {
+        "_id": "507f1f77bcf86cd799439021",
+        "name": "Hotel Mar y Arena, Playa Brava",
+        "value": 12500,
+        "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-623123308000482067/original/404d4f99-585f-4115-a98a-3e601932ef04.jpeg?im_w=720",
+        "categories": [
+          "507f1f77bcf86cd799439012",
+          "507f1f77bcf86cd79943230f1",
+          "507f1f77bcf86cd721321g21a"
+        ],
+        "amenities": "Beachfront hotel with swimming pool and restaurant. Direct access to Playa Brava.",
+        "calification": 4.7,
+        "UserPropertyId": "507f1f77bcf86cd799as2"
+      },
+      {
+        "_id": "507f1f77bcf86cd799439022",
+        "name": "Casa Colibri, Minca",
+        "value": 10500,
+        "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-623123308000482067/original/404d4f99-585f-4115-a98a-3e601932ef04.jpeg?im_w=720",
+        "categories": [
+          "507f1f77bcf86cd799439012",
+          "507f1f77bcf86cd79943230f1",
+          "507f1f77bcf86cd721321g21a"
+        ],
+        "amenities": "Rustic mountain house surrounded by nature. Ideal for birdwatching and hiking.",
+        "calification": 4.4,
+        "UserPropertyId": "507f1f77bcf86cd799as2"
+      }
+  ]
+  

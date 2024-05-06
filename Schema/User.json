@@ -1,0 +1,15 @@
+{
+    "_id": "507f1f77bcf86cd799439011",
+    "name": "Bill Gates",
+    "email" : "billGates01$@microsoft.com",
+    "password": "dqweuygu48334j$&%#$&YWEssa",
+    "picture" : "https://upload.wikimedia.org/wikipedia/commons/2/21/Meeting_with_Bill_Gates_-_Nov._8%2C_2019_%2849054512147%29_%28cropped%29.jpg",
+    "status" : true,
+    "identification": 1042241781,
+    "role" : ["507f1f77bcf86cd799439012", "507f1f77bcf86cd799439014"],
+    "favorites": ["507f1f77bcf86cd799439012"],
+    "transtions" : ["507f1f77bcf86cd799439012", "507f1f77bcf86cd799439012", "507f1f77bcf86cd799439012", "507f1f77bcf86cd799439012", "507f1f77bcf86cd799439012"],
+    "reservations" : ["507f1f77bcf86cd799439012", "507f1f77bcf86cd799439012", "507f1f77bcf86cd799439012", "507f1f77bcf86cd799439012", "507f1f77bcf86cd799439012"],
+    "properties": ["507f1f77bcf86cd799439012", "507f1f77bcf86cd799439012"],
+    "dateCreated " : "Wednesday 27, 2024"
+  }
