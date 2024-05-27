@@ -5,7 +5,7 @@ function Property({ data }) {
   return (
       <div
         onClick={() => navigate(`/property/${data.id}`)}
-        className="group size-72 cursor-pointer group: bg-cover bg-center rounded-[32px] p-1 relative shadow-[0_70px_30px_-50px_rgba(96,75,74,0.188)] transition-all duration-500 ease-in-out hover:rounded-tl-[55px]"
+        className="group size-72 cursor-pointer group bg-cover bg-center rounded-[32px] p-1 relative transition-all duration-500 ease-in-out hover:rounded-tl-[55px]"
         style={{ backgroundImage: `url(${data.picture})` }}
       >
         <button className="mail absolute right-8 top-5 bg-transparent border-none">

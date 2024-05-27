@@ -89,6 +89,19 @@ function App() {
             </div>
           )
         })} */}
+                {(props || props.length != []) ? props.map((property) => {
+          return(
+              <Property data={property} key={property._id} />
+          )
+        }) : <div className=" text-center font-bold text-lg w-full">Aún no hay Propiedades para mostrar, estamos trabajando en ello...</div>}
+        {/* {listProperties.map((property) => {
+          return(
+            <div key={property._id}>
+              <Property data={property} />
+            </div>
+          )
+        })} */}
+
       </div>
     </div>
     </>
