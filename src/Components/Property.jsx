@@ -21,7 +21,7 @@ function Property({ data }) {
             </div>
           </div>
           <div className="bottom-bottom absolute bottom-4 left-6 right-6 flex items-center justify-between">
-            <div className="flex values text-xs text-black">
+            <div className="truncate flex values text-xs text-black">
               {data.nombre}
             </div>
             <div className="  text-sm text-rose-500 values">$ {data.valor}</div>

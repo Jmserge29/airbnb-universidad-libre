@@ -3,6 +3,7 @@ import { MapPinIcon, TagIcon, UserGroupIcon } from "@heroicons/react/20/solid";
 import { useParams } from "react-router-dom";
 import IconGeneral from "../Components/IconGeneral";
 import { getProp } from "../Api/api";
+import Swal from 'sweetalert2'
 function Property_ID() {
   let [isOpen, setIsOpen] = useState(false);
   const [prop, setProp] = useState([])
@@ -16,9 +17,30 @@ function Property_ID() {
     }
   }
 
+  const [reserva, setReserva] = useState(() => {
+    // Intentamos obtener la reserva del localStorage
+    const reservaGuardada = localStorage.getItem('reserva');
+    // Si existe, la parseamos a JSON y la devolvemos, de lo contrario devolvemos un array vacío
+    return reservaGuardada ? JSON.parse(reservaGuardada) : [];
+  });
+
+  // Función para manejar la actualización de la reserva
+  const actualizarReserva = (nuevoElemento) => {
+    // Creamos una nueva reserva combinando el elemento nuevo con los existentes
+    const nuevaReserva = [...reserva, nuevoElemento];
+    // Actualizamos el estado y también guardamos en el localStorage
+    setReserva(nuevaReserva);
+    localStorage.setItem('reserva', JSON.stringify(nuevaReserva));
+    Swal.fire({
+      title: `Se reservó correctamente!`,
+      html: `Disfruta tu estancia en <b>${nuevoElemento.nombre}</b>!`,
+      icon: "success"
+    });
+  };
+
   useEffect(() => {
     loadDataProperty();
-  },  [])
+  },  [reserva])
 
 
   function closeModal() {
@@ -70,7 +92,7 @@ function Property_ID() {
                   $ {prop ? prop.valor : "Cargando"} 
                 </span>
                 
-                <button className="flex content-center items-center ml-auto font-semibold mr-5 text-white bg-rose-500 py-2 px-6 focus:outline-none transition-all hover:bg-rose-300 rounded-xl">
+                <button onClick={() => actualizarReserva(prop)} className="flex content-center items-center ml-auto font-semibold mr-5 text-white bg-rose-500 py-2 px-6 focus:outline-none transition-all hover:bg-rose-300 rounded-xl">
                   Reservar
                 </button>
               </div>
