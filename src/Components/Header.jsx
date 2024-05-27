@@ -19,7 +19,7 @@ function Header({header, handleClick}) {
   return (
     <>
       <div>
-        <header className={header ? " fixed z-20 drop-shadow-sm top-0 transition w-[100%] bg-white mb-24 h-[170px]" : " h-[250px]" + " p-5  bg-white "}>
+        <header className={header ? " fixed z-30 drop-shadow-sm top-0 transition w-[100%] bg-white mb-24 h-[170px]" : " h-[250px]" + " p-5  bg-white "}>
           {sign && <IconProfile user={sign}/> }
           <div className={header ? "  hidden " : " " + " flex justify-around"}>
             <ItemLogo />
