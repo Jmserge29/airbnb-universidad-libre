@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { faFireFlameCurved, faUmbrellaBeach, faBasketballBall, faMountain, faBuilding, faChainBroken, faHouseFlag, faMosque } from '@fortawesome/free-solid-svg-icons'
 import ItemCategory from './ItemCategory'
 
-function ListCategories() {
+function ListCategories({handleClick}) {
 
     const categories = [
+        {name: "*", icon: faHouseFlag},
         {name: "Tendencias", icon: faFireFlameCurved},
         {name: "Playa", icon: faUmbrellaBeach},
         {name: "Deportiva", icon: faBasketballBall},
@@ -18,7 +19,7 @@ function ListCategories() {
         {
             categories.map((data, i) => {
                 return(
-                    <ItemCategory key={i} category={data}/>
+                    <ItemCategory key={i} category={data} handler={handleClick} />
                 )
             })
         }

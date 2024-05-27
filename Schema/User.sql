@@ -1,15 +1,15 @@
 CREATE TABLE Usuario 
 (
-	id binary(16) PRIMARY KEY,
+	id BINARY(16) PRIMARY KEY NOT NULL,
 	picture VARCHAR(255),
     nombre VARCHAR(255)  NOT NULL,
 	email VARCHAR(255)  NOT NULL,
 	password VARCHAR(255)  NOT NULL,
 	cedula NUMBER(10) NOT NULL,
 	numero_tarjeta VARCHAR(255),
-	roleId VARCHAR(255),
-	estado VARCHAR(255),
-    createdAt VARCHAR(255)
+	roleId VARCHAR(255) NOT NULL,
+	estado VARCHAR(255) NOT NULL,
+    createdAt VARCHAR(255) NOT NULL
 );
 
 

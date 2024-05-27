@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ReservationCard from '../../Components/Reservations/ReservationCard'
+import { getReservations } from '../../Api/api';
 
 function Reservations() {
+
+  const [reservations, setReservations] = useState([])
+  async function loadDataReservations() {
+    try {
+      setReservations(await getReservations());
+    } catch (error) {
+      console.log("No se pudo cargar la información de los usuarios")
+    }
+  }
+
+  useEffect(() => {
+    loadDataReservations();
+  },  [])
+
   return (
     <div>
       Reservations

@@ -3,15 +3,15 @@ import { AdjustmentsHorizontalIcon } from "@heroicons/react/24/solid";
 function Body({data}) {
     return (
       <tbody className="">
-        {data.map((row) => {
+        {data.map((row, i) => {
           return(
-            <tr className=" hover:bg-rose-100 cursor-cell">
+            <tr key={row.cedula} className=" hover:bg-rose-100 cursor-cell">
             <td className="px-6 py-4 font-semibold text-gray-950">
               <div className=" inline-flex items-center">
                 <img
                   className=" bg-cover bg-center size-10 rounded-full"
-                  src={row.imagen}
-                  alt=""
+                  src={row.picture == "" ? "https://i.pinimg.com/originals/c7/79/85/c77985d336755f6fa6e823717f71cc10.png" : row.picture}
+                  alt={row.picture + "-" + i}
                 />
                 <p className="ml-3 ">{row.nombre}</p>
               </div>

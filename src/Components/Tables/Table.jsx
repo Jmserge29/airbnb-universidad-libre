@@ -10,8 +10,10 @@ function Table({header, data}) {
         <div className=" rounded-2xl overflow-hidden shadow-2xl">
           <table className="min-w-full bg-white shadow-2xl ">
             <Head header={header}/>
-            <Body data={data} />
+            {data ? <Body data={data} /> : <></>}
           </table>
+          {data ? <></> : <div className=' text-center py-3 font-semibold'>No se han encontrado usuarios ...</div>}
+          
         </div>
       </div>
     </div>

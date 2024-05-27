@@ -21,6 +21,8 @@ import Properties from "./Pages/Admin/Properties.jsx";
 import Transactions from "./Pages/Admin/Transactions.jsx";
 import Reservations from "./Pages/Admin/Reservations.jsx";
 import Report from "./Pages/Admin/Report.jsx";
+import User from "./Pages/Profile/User.jsx";
+import Client from "./Pages/Client/Client.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -39,6 +41,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/admin/properties" element={<Admin children={<Properties/>}/>}/>
           <Route path="/admin/transactions" element={<Admin children={<Transactions/>}/>}/>
           <Route path="/admin/report" element={<Admin children={<Report/>}/>}/>
+          {/* Rutas Usuario Final */}
+          <Route path="/profile/me" element={<User/>} />
+
+          <Route path="/client/me" element={<Client/>} />
+
 
 
           <Route path="*" element={<Navigate to="/404" replace />} />

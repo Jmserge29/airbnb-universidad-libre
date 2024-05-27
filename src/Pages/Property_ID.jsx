@@ -1,50 +1,85 @@
-import React, { useState } from "react";
-import Categories from "../Components/Property_ID/Categories";
-import Image from "../Components/Property_ID/Image";
-import Title_Description from "../Components/Property_ID/Title_Description";
-import List_Amenaties from "../Components/Property_ID/List_Amenaties";
-import Value_Information from "../Components/Property_ID/Value_Information";
-import Fuctions from "../Components/Property_ID/Fuctions";
-import ButtonLeft from "../Components/ButtonLeft";
-import Modal from "../Components/Property_ID/Modal";
+import React, { useEffect, useState } from "react";
+import { MapPinIcon, TagIcon, UserGroupIcon } from "@heroicons/react/20/solid";
+import { useParams } from "react-router-dom";
+import IconGeneral from "../Components/IconGeneral";
+import { getProp } from "../Api/api";
 function Property_ID() {
+  let [isOpen, setIsOpen] = useState(false);
+  const [prop, setProp] = useState([])
+  const {id} = useParams()
 
-  let [isOpen, setIsOpen] = useState(false)
+  async function loadDataProperty() {
+    try {
+      setProp(await getProp(id));
+    } catch (error) {
+      console.log("No se pudo cargar la información de los usuarios")
+    }
+  }
+
+  useEffect(() => {
+    loadDataProperty();
+  },  [])
+
 
   function closeModal() {
-    setIsOpen(false)
+    setIsOpen(false);
   }
 
   function openModal() {
-    setIsOpen(true)
+    setIsOpen(true);
   }
   return (
     <>
-    <ButtonLeft/>
-      <div className="max-w-[105rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
-          {/* Imagen de la propiedad */}
-          <Image/>
+    <IconGeneral/>
+      <section className="flex h-screen text-gray-700 content-center items-center">
+        <div className="flex container px-12 py-24 mx-auto w-full bg-white rounded-3xl">
+          <div className="lg:w-[100%] mx-l flex w-full">
+            <img
+              alt="ecommerce"
+              width={"60%"}
+              height={"60%"}
+              className=" bg-cover rounded-2xl object-cover object-center border border-gray-200"
+              src={prop.picture ? prop.picture : "https://t3.ftcdn.net/jpg/04/60/01/36/360_F_460013622_6xF8uN6ubMvLx0tAJECBHfKPoNOR5cRa.jpg"}
+            />
+            <div className="lg:w-[100%] mx-3 py-5 content-center items-center text-center rounded-3xl bg-slate-50 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+              <h1 className="text-white text-5xl  rounded-xl py-3 bg-rose-500 text-center values mb-1">
+                {prop ? prop.nombre : "Cargando"}
+              </h1>
 
-          <div className="mt-5 sm:mt-10 lg:mt-0">
-            <div className="space-y-6 sm:space-y-8">
-              <div className="space-y-2 md:space-y-4">
-              <Title_Description/>
+              <div className="flex my-4 pt-3 space-x-4">
+                <span className=" rounded-xl px-3 py-2 bg-teal-100 flex items-center font-semibold">
+                  <MapPinIcon className="size-8 text-teal-800 mr-2" />{" "}
+                  {prop ? prop.ubicacion : "Cargando"}
+                </span>
+                <span className=" rounded-xl px-3 py-2 bg-amber-100 text-2xl flex items-center values">
+                  <UserGroupIcon className="size-8 text-rose-500 mr-2" /> {prop ? prop.capacidad : "#"}
+                </span>
+                <span className=" rounded-xl px-3 py-2 bg-indigo-200 text-gray-950 flex items-center font-semibold">
+                  <TagIcon className="size-8 text-indigo-700 mr-2" />{" "}
+                  {prop ? prop.categoria : "Cargando"}
+                </span>
+
               </div>
-              {/* Categorías en la que se encuentra la propiedad  */}
-              <Categories/>
-              {/* Listado de comodidades */}
-              <List_Amenaties/>
-              <hr />
-              <Value_Information/>
-              <hr />
-              {/* Botones de las funciones principales */}
-              <Fuctions openModal={openModal}/>
-              
-      <Modal closeModal={closeModal} isOpen={isOpen}/>
+              <p className="leading-relaxed mx-12 font-semibold text-black">
+                {prop ? prop.comodidades : "Cargando"}
+              </p>
+              <div className="flex mt-2 items-center pb-5 border-b-2 border-slate-200 mb-5">
+              </div>
+              <div className="flex">
+                <span className="title-font font-medium text-5xl text-rose-500 values">
+                  $ {prop ? prop.valor : "Cargando"} 
+                </span>
+                
+                <button className="flex content-center items-center ml-auto font-semibold mr-5 text-white bg-rose-500 py-2 px-6 focus:outline-none transition-all hover:bg-rose-300 rounded-xl">
+                  Reservar
+                </button>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <div>
+
       </div>
     </>
   );
