@@ -4,7 +4,11 @@ import { useParams } from "react-router-dom";
 import IconGeneral from "../Components/IconGeneral";
 import { getProp } from "../Api/api";
 import Swal from 'sweetalert2'
+import Cookies from "universal-cookie";
+import config from "../../config";
+
 function Property_ID() {
+  const cookies = new Cookies( { path: '/' });
   let [isOpen, setIsOpen] = useState(false);
   const [prop, setProp] = useState([])
   const {id} = useParams()
@@ -50,6 +54,11 @@ function Property_ID() {
   function openModal() {
     setIsOpen(true);
   }
+  useEffect(() => {
+    const usuario = cookies.get(`${config.SECRET_COOKIE}`);
+  }, [])
+
+
   return (
     <>
     <IconGeneral/>
@@ -92,7 +101,11 @@ function Property_ID() {
                   $ {prop ? prop.valor : "Cargando"} 
                 </span>
                 
-                <button onClick={() => actualizarReserva(prop)} className="flex content-center items-center ml-auto font-semibold mr-5 text-white bg-rose-500 py-2 px-6 focus:outline-none transition-all hover:bg-rose-300 rounded-xl">
+                <button onClick={() => !usuario ? Swal.fire({
+                icon: "error",
+                title: "Inicie Sesión Antes de Realizar una cuenta",
+                html: `Antes de reservar una propiedad debes realizar el registro de tu cuenta o iniciar sesión si ya cuentas con una, mucha suerte!`,
+            }): actualizarReserva(prop)} className="flex content-center items-center ml-auto font-semibold mr-5 text-white bg-rose-500 py-2 px-6 focus:outline-none transition-all hover:bg-rose-300 rounded-xl">
                   Reservar
                 </button>
               </div>
