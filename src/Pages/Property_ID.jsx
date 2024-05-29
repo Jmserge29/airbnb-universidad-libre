@@ -54,8 +54,8 @@ function Property_ID() {
   function openModal() {
     setIsOpen(true);
   }
+  const usuario = cookies.get(`${config.SECRET_COOKIE}`);
   useEffect(() => {
-    const usuario = cookies.get(`${config.SECRET_COOKIE}`);
   }, [])
 
 
